@@ -1,4 +1,9 @@
 import React, { Component } from 'react'
+import styled from 'styled-components';
+
+const Wrapper = styled.div`
+
+`;
 
 class Matches extends Component {
   
@@ -19,7 +24,7 @@ class Matches extends Component {
               contact,
           } = this.state
         return (
-            <div>
+            <Wrapper>
             {contact.map((item) => (
                 <div className="card">
                     <div className="card-body">
@@ -35,7 +40,7 @@ class Matches extends Component {
                     </div>
                 </div>
                 ))}
-            </div>
+            </Wrapper>
             )
         }
     }

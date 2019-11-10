@@ -1,15 +1,20 @@
 import React, { Component } from 'react'
+import styled from 'styled-components';
+
+const Wrapper = styled.div`
+
+`;
 
 class Header extends Component {
   
       render() {
         return (
-            <div>
-                <div className="buttons">
-                    <button classname="reject">Reject</button>
-                    <button classname="accept">Take it</button>
+            <Wrapper>
+                <div className="header">
+                    <img src="assets/logo.png" />
+                    <h5 className="card-title">Jon Doe</h5>
                 </div>
-            </div>
+            </Wrapper>
             );
         }
       }

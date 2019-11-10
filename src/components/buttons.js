@@ -1,15 +1,20 @@
 import React, { Component } from 'react'
+import styled from 'styled-components';
+
+const Wrapper = styled.div`
+
+`;
 
 class Buttons extends Component {
     
       render() {
         return (
-            <div>
+            <Wrapper>
                 <div className="buttons">
-                    <button classname="reject">Reject</button>
-                    <button classname="accept">Take it</button>
+                    <button className="reject">Reject</button>
+                    <button className="accept">Take it</button>
                 </div>
-            </div>
+            </Wrapper>
             );
         }
     }
